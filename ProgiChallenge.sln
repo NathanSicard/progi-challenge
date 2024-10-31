@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgiChallenge.Server", "ProgiChallenge.Server\ProgiChallenge.Server.csproj", "{D1426318-1E98-4525-ABEC-40064D8BC654}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "progichallenge.client", "progichallenge.client\progichallenge.client.esproj", "{24FA3E63-E959-4855-A071-5FA40B30D215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1426318-1E98-4525-ABEC-40064D8BC654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1426318-1E98-4525-ABEC-40064D8BC654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1426318-1E98-4525-ABEC-40064D8BC654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1426318-1E98-4525-ABEC-40064D8BC654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FA3E63-E959-4855-A071-5FA40B30D215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FA3E63-E959-4855-A071-5FA40B30D215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FA3E63-E959-4855-A071-5FA40B30D215}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{24FA3E63-E959-4855-A071-5FA40B30D215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FA3E63-E959-4855-A071-5FA40B30D215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FA3E63-E959-4855-A071-5FA40B30D215}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C21193C3-983D-4D79-844F-F2B0EDCBC3F5}
+	EndGlobalSection
+EndGlobal
