@@ -21,6 +21,8 @@ Currently, calculations are run in the backend. However, the estimates are simpl
 
 Prices should probably be capped to a maximum however they are not currently capped as it wasn't an explicit requirement. A minimum of 0$ (free) was included.
 
+Automated linting as well as tests should be included in the final pipeline.
+
 ### Frontend
 Given the current architecture, an alternative allowing a reduction of server requests to achieve a similar result would be to include a debounce/throttle to the update requests. By updating the price estimates based on the last change in the last 200ms (interval tbd), we would allow a seemingly realtime experience for the user while reducing the request load to the server.
 
