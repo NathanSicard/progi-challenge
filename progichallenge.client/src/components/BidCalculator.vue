@@ -1,10 +1,12 @@
 <template>
     <div class="bidCalculator-component">
         <h1>Bid Calculator</h1>
-        <form>
+        <form class="bidCalculator-component__form">
             <div>
                 <label>Price</label>
                 <input type="number" min="0" step=".01" v-model="vehiclePrice" />
+            </div>
+            <div>
                 <label>Type</label>
                 <select v-model="vehicleType">
                     <option>Common</option>
@@ -12,18 +14,20 @@
                 </select>
             </div>
         </form>
-        <h2>Breakdown</h2>
-        <div v-if="post">
-            <p>Basic Fee: {{ post.basicFee.toFixed(2) }}$</p>
-            <p>Special Fee: {{ post.specialFee.toFixed(2) }}$</p>
-            <p>Association Fee: {{ post.associationFee.toFixed(2) }}$</p>
-            <p>Storage Fee: {{ post.storageFee.toFixed(2) }}$</p>
-            <p>TotalCost: {{ post.totalCost.toFixed(2) }}$</p>
-        </div>
-        <div v-else>
-            <div v-if="errorMessage">
-                <h3>Please provide a valid price</h3>
-                <p>Reason: {{ errorMessage }}</p>
+        <div class="bidCalculator-component__breakdown">
+            <h2>Breakdown</h2>
+            <div v-if="post">
+                <p class="bidCalculator-component__breakdown--basic">Basic Fee: {{ post.basicFee.toFixed(2) }}$</p>
+                <p class="bidCalculator-component__breakdown--special">Special Fee: {{ post.specialFee.toFixed(2) }}$</p>
+                <p class="bidCalculator-component__breakdown--association">Association Fee: {{ post.associationFee.toFixed(2) }}$</p>
+                <p class="bidCalculator-component__breakdown--storage">Storage Fee: {{ post.storageFee.toFixed(2) }}$</p>
+                <p class="bidCalculator-component__breakdown--total">TotalCost: {{ post.totalCost.toFixed(2) }}$</p>
+            </div>
+            <div v-else>
+                <div v-if="errorMessage">
+                    <h3>Please provide a valid price</h3>
+                    <p>Reason: {{ errorMessage }}</p>
+                </div>
             </div>
         </div>
     </div>
@@ -81,21 +85,12 @@
 </script>
 
 <style scoped>
-th {
-    font-weight: bold;
+
+.bidCalculator-component__breakdown {
+    height: 200px;
 }
 
-th, td {
-    padding-left: .5rem;
-    padding-right: .5rem;
-}
-
-.car-component {
-    text-align: center;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
+.bidCalculator-component__form label {
+    margin-right: 0.25rem;
 }
 </style>

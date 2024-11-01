@@ -24,7 +24,7 @@ Prices should probably be capped to a maximum however they are not currently cap
 ### Frontend
 Given the current architecture, an alternative allowing a reduction of server requests to achieve a similar result would be to include a debounce/throttle to the update requests. By updating the price estimates based on the last change in the last 200ms (interval tbd), we would allow a seemingly realtime experience for the user while reducing the request load to the server.
 
-The frontend would need an improved UI/look. I did not focus on that portion considering it was not mentioned in the requirements.
+The frontend would need an improved UI/look. I did not focus on that portion considering it was not mentioned in the requirements. Proper CSS files along with custom input fields would greatly improve the look of the application.
 
 ### Backend
 I am not quite satisfied with the current backend architecture. I have the impression that there should be a cleaner way to implement the Vehicle class. While I support the current use of abstraction in order to reuse common logic, I feel like the properties could be reworked in some way (based on instinct).
